@@ -3,3 +3,8 @@ get_data <- functin(){
 }
 
 #is this working?
+
+library(stringr)
+get_GC_content <- function(dna){
+
+}
