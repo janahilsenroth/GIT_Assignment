@@ -4,6 +4,13 @@ data <- read.csv("data/houseelf-earlength-dna-data.csv")
 
 #is this working?
 
+#Problem 4- 
+
+
+
+
+
+
 library(stringr)
 get_GC_content <- function(dna){
   lows <- str_to_lower(dna)
