@@ -13,3 +13,8 @@ get_GC_content <- function(dna){
   return(content)
 }
 
+get_ear_length <- function(seq){
+   #Calculate the GC-content for one or more sequences
+   ear_lengths <- ifelse(seq > 10, "large", "small")
+   return(ear_lengths)
+}
