@@ -18,3 +18,14 @@ get_ear_length <- function(seq){
    ear_lengths <- ifelse(seq > 10, "large", "small")
    return(ear_lengths)
 }
+
+dna_seq <- data$dnaseq
+earlength_data <- data$earlength
+id <- data$id
+
+x <- get_GC_content(dna_seq)
+y <- get_ear_length(earlength_data)
+
+table <- cbind(id,x,y)
+table
+write.csv(table, file="house-elf-ear-classification")
